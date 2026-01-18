@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owl – Roblox Terrain Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <img src="imgs/logo.png" alt="Owl Logo" class="loader-logo">
+    <div class="loader-text">Owl Terrain Portfolio</div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="imgs/logo.png" alt="Owl Logo">
+        <span>Owl</span>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#personal">Personal</a>
+        <a href="#client">Client Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Terrain Portfolio</h1>
+    <p>Creating immersive, cinematic Roblox environments — forests, mountains, ruins & epic open worlds</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="intro-card">
+      <p>
+        Hey, I’m <strong>Owl</strong>.<br>
+        Roblox terrain specialist crafting high-detail, performant landscapes — lush forests, dramatic mountains, ancient ruins, and massive atmospheric biomes.
+      </p>
+    </div>
+  </section>
+
+  <!-- PERSONAL WORK -->
+  <section id="personal">
+    <h2>Personal Work</h2>
+    <div class="masonry-grid">
+      <div class="masonry-item"><img src="imgs/personal-1.png" alt="Personal terrain 1" onclick="openModal(this.src)"></div>
+      <div class="masonry-item"><img src="imgs/personal-2.png" alt="Personal terrain 2" onclick="openModal(this.src)"></div>
+      <div class="masonry-item"><img src="imgs/personal-3.png" alt="Personal terrain 3" onclick="openModal(this.src)"></div>
+    </div>
+  </section>
+
+  <!-- CLIENT PROJECTS -->
+  <section id="client">
+    <h2>Client Projects</h2>
+    <div class="intro-card">
+      <p style="font-style:italic; font-size:1.4rem; margin-bottom:1.5rem;">
+        “@Owl is an excellent terrain artist. Fast delivery, extremely close match to references, great communication.”
+      </p>
+      <p style="color:var(--primary); font-weight:700; font-size:1.3rem;">— Paulteus</p>
+    </div>
+    <div class="masonry-grid">
+      <div class="masonry-item"><img src="imgs/client-1.png" alt="Client project 1" onclick="openModal(this.src)"></div>
+      <div class="masonry-item"><img src="imgs/client-2.png" alt="Client project 2" onclick="openModal(this.src)"></div>
+      <div class="masonry-item"><img src="imgs/client-3.png" alt="Client project 3" onclick="openModal(this.src)"></div>
+      <div class="masonry-item"><img src="imgs/client-4.png" alt="Client project 4" onclick="openModal(this.src)"></div>
+      <div class="masonry-item"><img src="imgs/client-5.png" alt="Client project 5" onclick="openModal(this.src)"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <div class="intro-card">
+      <p style="font-size:1.4rem;">
+        Roblox: <strong>Dragondustss</strong><br>
+        Discord: <strong>_the__owl</strong><br><br>
+        Open for commissions — large-scale maps, atmospheric scenes, optimization-friendly terrain.
+      </p>
+    </div>
+  </section>
+
+  <!-- IMAGE MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal()">×</button>
+      <img id="modalImg" alt="Enlarged terrain artwork">
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Owl – Roblox Terrain Artist<br>
+    <strong>Handcrafted by Owl</strong>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
